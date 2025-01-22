@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:layout_alignParentLeft="true"
+        android:textSize="40dp"
+        android:text="Type here:" />
+
+    <EditText
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt1"
+        android:backgroundTint="#F8F8F8"
+        android:textColor="@color/black"
+        android:theme="@android:style/Theme.Black" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txt2"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:text="OK"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txt2"
+       android:layout_toLeftOf="@+id/btn1"
+        android:text="CANCEL"/>
+
+</RelativeLayout>
